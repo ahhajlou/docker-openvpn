@@ -20,7 +20,7 @@ RUN cd /tmp && \
 
 
 RUN cd /tmp && \
-    git clone https://github.com/kylemanna/docker-openvpn && \
+    git clone https://github.com/ahhajlou/docker-openvpn && \
     cp /tmp/docker-openvpn/bin/* /usr/local/bin && \
     chmod a+x /usr/local/bin/*
 
