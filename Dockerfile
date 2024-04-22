@@ -11,7 +11,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/reposi
 RUN cd /tmp && \
     wget https://swupdate.openvpn.org/community/releases/openvpn-2.6.10.tar.gz && \
     tar xf openvpn-2.6.10.tar.gz && \
-    git clone https://github.com/egc112/OpenWRT-OpenVPN-scramble && \
+    git clone https://github.com/ahhajlou/OpenWRT-OpenVPN-scramble && \
     cd openvpn-2.6.10 && \
     cp /tmp/OpenWRT-OpenVPN-scramble/2.6/* . && \
     bash -c 'for i in `ls 99*`; do git apply $i; done' && \
