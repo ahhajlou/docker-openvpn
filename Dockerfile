@@ -14,7 +14,7 @@ RUN cd /tmp && \
     git clone https://github.com/ahhajlou/OpenWRT-OpenVPN-scramble && \
     cd openvpn-2.6.10 && \
     cp /tmp/OpenWRT-OpenVPN-scramble/2.6/* . && \
-    bash -c 'for i in `ls 99*`; do git apply $i; done' && \
+    bash -c 'for i in `ls 99*.patch`; do git apply $i; done' && \
     ./configure --disable-dco && \
     make && make install
 
